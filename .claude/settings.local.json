@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(Get-ChildItem -Path \"C:\\\\Users\\\\claud\\\\Desktop\\\\IPSS\\\\2026\\\\1°Trimestre\\\\Backend\\\\Evaluacion 3\\\\Eva3_Abaroa_Ramos\\\\backend\" -Depth 1 | Where-Object {$_.PSIsContainer} | Select-Object Name)",
+      "Bash(Get-ChildItem -Path \"C:\\\\Users\\\\claud\\\\Desktop\\\\IPSS\\\\2026\\\\1°Trimestre\\\\Backend\\\\Evaluacion 3\\\\Eva3_Abaroa_Ramos\" -Recurse -File)",
+      "Bash(Select-Object FullName)",
+      "Bash(Format-List)",
+      "Bash(find \"/mnt/c/Users/claud/Desktop/IPSS/2026/1°Trimestre/Backend/Evaluacion 3/Eva3_Abaroa_Ramos\" -type f 2>/dev/null | head -100)",
+      "Bash(ls \"/mnt/c/Users/claud/Desktop/IPSS\" 2>&1)",
+      "PowerShell(Get-Process -Name \"Docker Desktop\" -ErrorAction SilentlyContinue)",
+      "PowerShell($json = Get-Content \"C:\\\\Users\\\\claud\\\\Desktop\\\\IPSS\\\\2026\\\\1°Trimestre\\\\Backend\\\\Evaluacion 3\\\\Eva3_Abaroa_Ramos\\\\storage\\\\api-docs\\\\api-docs.json\" -Raw | ConvertFrom-Json; $json.tags | ConvertTo-Json)"
+    ]
+  }
+}
